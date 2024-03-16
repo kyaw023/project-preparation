@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.container-layout {
+    @apply max-w-screen-xl mx-auto 
+}
+
+.center-layout {
+    @apply flex items-center justify-center
+}
+
+.center-between {
+    @apply flex items-center justify-between
+}
