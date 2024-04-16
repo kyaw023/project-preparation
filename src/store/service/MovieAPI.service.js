@@ -5,6 +5,6 @@ export const MovieAPI = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: "https://api.themoviedb.org/3/",
   }),
-
+  tagTypes: ["themoviedb"],
   endpoints: (builder) => ({}),
 });

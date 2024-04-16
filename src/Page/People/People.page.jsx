@@ -1,11 +1,12 @@
 import React from "react";
 import { useGetPopularPeopleQuery } from "../../store/endpoints/People.endpoint";
-import { PeopleCardComponent } from "../../Components";
+import { NavbarComponent, PeopleCardComponent } from "../../Components";
 
 const PeoplePage = () => {
   const { data: popularPeople } = useGetPopularPeopleQuery();
   return (
     <div>
+      <NavbarComponent />
       <div className=" my-6">
         <h1 className=" text-2xl font-semibold text-slate-300">
           Popular People

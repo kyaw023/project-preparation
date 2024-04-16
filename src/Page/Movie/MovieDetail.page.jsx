@@ -16,6 +16,7 @@ import { Facebook, Twitter, Instagram } from "lucide-react";
 import {
   MediaComponent,
   MovieDetailCard,
+  NavbarComponent,
   ReviewsComponent,
   TopBilledCastComponent,
 } from "../../Components";
@@ -40,6 +41,7 @@ const MovieDetailPage = () => {
 
   return (
     <div>
+      <NavbarComponent />
       {/* DetailCard */}
       <MovieDetailCard data={data} />
 
@@ -136,7 +138,9 @@ const MovieDetailPage = () => {
           </div>
 
           <div className=" mt-5">
-            <h1 className=" text-xl font-medium text-slate-300 mb-3">Keywords</h1>
+            <h1 className=" text-xl font-medium text-slate-300 mb-3">
+              Keywords
+            </h1>
             <div className=" grid grid-cols-2 gap-2 text-xs">
               {keywords?.keywords?.map((keyword) => {
                 return (

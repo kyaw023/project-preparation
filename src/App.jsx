@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavbarComponent } from "./Components";
 import { Route, Routes } from "react-router-dom";
 import {
@@ -12,6 +12,7 @@ import {
   MovieSearchPage,
   MoviesPage,
   NetworkSearchPage,
+  NotFoundPage,
   NowplayingMoviePage,
   OnTVSeriesPage,
   PeopleDetailPage,
@@ -21,6 +22,7 @@ import {
   SearchPage,
   SeriesDetailPage,
   SeriesPage,
+  SignInPage,
   TopRatedSeriesPage,
   TopratedMoviePage,
   TvShowSearchPage,
@@ -33,9 +35,11 @@ import ReviewPage from "./Page/Review/Review.page";
 const App = () => {
   return (
     <div className="custom-container py-3">
-      <NavbarComponent />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/*" element={<NotFoundPage />} />
+        <Route path="/sign-in" element={<SignInPage />} />
+
         <Route path="/movies" element={<MoviesPage />}>
           <Route index element={<PopularMoviePage />} />
           <Route path="upcoming" element={<UpcomingMoviePage />} />

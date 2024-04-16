@@ -25,3 +25,4 @@ export { default as KeywordSearchPage } from "./Search/Keywords.search.page";
 export { default as NetworkSearchPage } from "./Search/Networks.search.page";
 export { default as PeopleSearchPage } from "./Search/People.search.page";
 export { default as CompaniesSearchPage } from "./Search/Companies.search.page";
+export { default as NotFoundPage } from "./NotFound/NotFound.page";

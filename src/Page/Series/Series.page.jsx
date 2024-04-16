@@ -5,7 +5,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../../Components/ui/accordion";
-import { DatePickerComponent, SelectDropDownComponent } from "../../Components";
+import {
+  DatePickerComponent,
+  NavbarComponent,
+  SelectDropDownComponent,
+} from "../../Components";
 import CheckBoxComponent from "../../Components/MovieComponent/CheckBox.component";
 import { Badge } from "../../Components/ui/badge";
 import {
@@ -23,6 +27,7 @@ import {
 const SeriesPage = () => {
   return (
     <div>
+      <NavbarComponent />
       <div className=" my-5">
         <Tabs defaultValue="popular">
           <TabsList>

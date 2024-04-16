@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import {
   MediaComponent,
   MovieDetailCard,
+  NavbarComponent,
   ReviewsComponent,
   TopBilledCastComponent,
 } from "../../Components";
@@ -24,6 +25,7 @@ const SeriesDetailPage = () => {
   console.log("seriesReview", seriesReview);
   return (
     <div>
+      <NavbarComponent />
       {/* DetailCard */}
       <MovieDetailCard data={seriesDetail} />
 

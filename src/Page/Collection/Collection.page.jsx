@@ -1,7 +1,11 @@
 import React from "react";
 import { useParams, useLocation } from "react-router-dom";
 import { useGetCollectionQuery } from "../../store/endpoints/Movie.endpoint";
-import { MovieDetailCard, CastCardComponent } from "../../Components";
+import {
+  MovieDetailCard,
+  CastCardComponent,
+  NavbarComponent,
+} from "../../Components";
 import { Badge } from "../../Components/ui/badge";
 
 const CollectionPage = () => {
@@ -15,6 +19,7 @@ const CollectionPage = () => {
 
   return (
     <div>
+      <NavbarComponent />
       <MovieDetailCard data={data} />
       <div className=" my-10">
         <CastCardComponent title={"Featured Cast"} data={state?.cast} />

@@ -9,6 +9,7 @@ import {
 import {
   DatePickerComponent,
   LoadingComponent,
+  NavbarComponent,
   SelectDropDownComponent,
 } from "../../Components";
 import CheckBoxComponent from "../../Components/MovieComponent/CheckBox.component";
@@ -28,6 +29,9 @@ const MoviesPage = () => {
   return (
     <div>
       {isLoading && <LoadingComponent />}
+      <div>
+        <NavbarComponent />
+      </div>
       <div className=" my-5">
         <Tabs defaultValue="popular">
           <TabsList>
